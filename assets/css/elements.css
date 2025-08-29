@@ -1,0 +1,286 @@
+/*
+	ELEMENTS PAGE THEME
+	مخصص لصفحة العناصر فقط
+	مبني على main.css مع تعديلات بسيطة
+*/
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* تحسين لون الخلفية وتوحيد الخط */
+body {
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+	background: #181c23; /* نفس main.css */
+	color: #f5f5f5;
+	line-height: 1.8;
+}
+
+/* Header */
+header#header {
+	background: #23272f;
+	color: #fff;
+	padding: 1.7em 0 1.2em 0;
+	box-shadow: 0 2px 12px #0004;
+	border-radius: 0 0 20px 20px;
+}
+header#header .logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.2em;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+}
+header#header nav a {
+	color: #fff;
+	margin-left: 2em;
+	font-size: 1.08em;
+	text-decoration: none;
+	transition: color 0.2s;
+	font-weight: 500;
+}
+header#header nav a:hover {
+	color: #e0e0e0;
+}
+
+/* Menu */
+nav#menu {
+	background: #23272f;
+	padding: 1.1em 0 0.7em 0;
+	border-radius: 0 0 14px 14px;
+	box-shadow: 0 1px 8px #0004;
+}
+nav#menu ul.links {
+	display: flex;
+	justify-content: center;
+	gap: 2.2em;
+	list-style: none;
+}
+nav#menu ul.links li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.08em;
+	transition: color 0.2s;
+}
+nav#menu ul.links li a:hover {
+	color: #e0e0e0;
+}
+nav#menu ul.actions {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 1em;
+	list-style: none;
+}
+.button, .button.primary {
+	background: #22252b;
+	color: #fff;
+	padding: 0.7em 1.7em;
+	border: none;
+	border-radius: 22px;
+	font-size: 1.08em;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background 0.2s, color 0.2s;
+	box-shadow: 0 1px 4px #0002;
+	border: 1.5px solid #444;
+}
+.button.primary, .button:hover {
+	background: #fff;
+	color: #23272f;
+}
+
+/* توحيد شكل العناوين */
+header.major h1, header.major h2, header.major h3 {
+	color: #fff;
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	margin-bottom: 0.7em;
+}
+
+/* توحيد شكل الأقسام */
+section, .inner {
+	background: #23272f;
+	border-radius: 14px;
+	box-shadow: 0 2px 10px #0004;
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+/* إزالة خلفية القسم الرئيسي */
+#main.alt {
+	background: transparent;
+	box-shadow: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+/* تحسين الجداول */
+.table-wrapper {
+	overflow-x: auto;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1.5em;
+	background: #23272f;
+	color: #fff;
+}
+table th, table td {
+	padding: 0.8em 1em;
+	border: 1px solid #444;
+}
+table th {
+	background: #181c23;
+	font-weight: bold;
+}
+table.alt th, table.alt td {
+	background: #23272f;
+}
+table.alt tr:nth-child(even) td {
+	background: #22252b;
+}
+
+/* توحيد شكل الأزرار */
+.button, .button.primary, input[type="submit"], input[type="reset"], button {
+	background: #22252b;
+	color: #fff;
+	border-radius: 22px;
+	border: 1.5px solid #444;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+.button.primary, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+	background: #fff;
+	color: #23272f;
+}
+
+/* توحيد الحقول */
+input, textarea, select {
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+	background: #181c23;
+	color: #f5f5f5;
+	border: 1.5px solid #444;
+	border-radius: 8px;
+	padding: 0.7em;
+	font-size: 1em;
+}
+
+/* Footer */
+footer#footer {
+	background: #23272f;
+	color: #fff;
+	padding: 2em 0;
+	border-radius: 12px 12px 0 0;
+	margin-top: 2em;
+	box-shadow: 0 -1px 6px #0004;
+}
+footer#footer .icons {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+	margin-bottom: 1em;
+}
+footer#footer .icons a {
+	color: #fff;
+	font-size: 1.3em;
+	transition: color 0.2s;
+}
+footer#footer .icons a:hover {
+	color: #e0e0e0;
+}
+footer#footer .copyright {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+	color: #e0e0e0;
+	font-size: 0.95em;
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+}
+
+/* تحسين الأعمدة والصفوف */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+.col-6, .col-4, .col-12-medium, .col-12-small, .col-12-xsmall {
+	box-sizing: border-box;
+}
+
+/* تحسين تباعد الأزرار */
+ul.actions,
+ul.actions.fit,
+ul.actions.fit.small,
+ul.actions.small {
+  gap: 0.7em !important;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+ul.actions li {
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+ul.actions.stacked li {
+  display: block;
+  margin-right: 0;
+}
+
+.button, .button.primary, input[type="submit"], input[type="reset"], button {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* إزالة الصور من العناصر */
+.image, .image.fit, .image.left, .image.right, .box.alt {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #wrapper {
+    max-width: 98vw;
+    padding: 0 0.5em;
+  }
+  .row {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  .col-6, .col-4, .col-12-medium, .col-12-small, .col-12-xsmall {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  section, .inner {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 0.98em;
+  }
+  header#header .logo {
+    font-size: 1.3em;
+  }
+  section, .inner {
+    padding: 0.7em;
+  }
+}
+
+/* خطوط متناسقة */
+body, h1, h2, h3, h4, h5, h6, input, textarea, button, label, a, p, span, div {
+	font-family: 'Cairo', 'Segoe UI', Arial, sans-serif !important;
+	letter-spacing: 0.02em;
+}

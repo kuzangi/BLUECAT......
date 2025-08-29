@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>
+			window.chartDebug = true; // Enable debug logging
+		</script>
+		<title>Water consumption statistics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<!-- Note: The "styleN" class below should match that of the banner element. -->
+			<header id="header" class="alt style2">
+				<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+			<!-- Banner -->
+			<!-- Note: The "styleN" class below should match that of the header element. -->
+			<section id="banner" class="style2">
+				<div class="inner">
+					<span class="image">
+						<img src="images/pic07.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h1>Water consumption statistics</h1>
+					</header>
+					<div class="content">
+						<p>Show hourly, daily, monthly, or anual consumption of water.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- One -->
+				<section id="one">
+					<div class="inner">
+						<header class="major">
+							<h2>.</h2>
+						</header>
+						<p>.</p>
+					</div>
+				</section>
+				<div id="sensor-readings">
+					<p>Current Distance: <span id="distanceValue">0</span> cm</p>
+					<p>Water Level: <span id="distanceValue1">0</span>%</p>
+					<p>Last Updated: <span id="timeValue">Never</span></p>
+				</div>
+				<h2>Real time consumption</h2>
+				<canvas id="distanceChart"></canvas>
+				<h2>Daily Averages</h2>
+				<canvas id="dailyChart"></canvas>
+
+				<h2>Weekly Averages</h2>
+				<canvas id="weeklyChart"></canvas>
+
+				<h2>Monthly Averages</h2>
+				<canvas id="monthlyChart"></canvas>
+
+				<h2>Annual Averages</h2>
+				<canvas id="annualChart"></canvas>
+			</div>
+
+			<!-- Contact Section -->
+			<section id="contact" class="contact-modern improved-contact">
+				<div class="inner">
+					<div class="contact-card improved-vertical">
+						<form method="post" action="#">
+							<h2>Contact Us</h2>
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+							</div>
+						</form>
+						<div class="contact-info improved-vertical">
+							<div>
+								<span class="icon solid fa-envelope fa-2x"></span>
+								<div>
+									<h3>Email</h3>
+									<a href="#">information@untitled.tld</a>
+								</div>
+							</div>
+							<div>
+								<span class="icon solid fa-phone fa-2x"></span>
+								<div>
+									<h3>Phone</h3>
+									<span>(000) 000-0000 x12387</span>
+								</div>
+							</div>
+							<!-- Address removed -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+						<li><a href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+						<li><a href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="#" title="GitHub"><i class="bi bi-github"></i></a></li>
+						<li><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<!-- website scripts -->
+		<script src="assets/js/website-js/jquery.min.js"></script>
+		<script src="assets/js/website-js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/website-js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/website-js/browser.min.js"></script>
+		<script src="assets/js/website-js/breakpoints.min.js"></script>
+		<script src="assets/js/website-js/util.js"></script>
+		<script src="assets/js/website-js/main.js"></script>
+		
+		<!-- my js script -->
+		<script type="module" src="assets/js/firebase.mjs"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>
